@@ -1,17 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monitoreo Pozo Quintanilla</title>
     <style>
-        body { margin: 0; display: flex; flex-direction: column; align-items: center; font-family: sans-serif; }
-        .contenedor { width: 95%; max-width: 1200px; margin-top: 20px; border: 1px solid #ccc; border-radius: 8px; overflow: hidden; }
+        /* Este estilo centra todo en la página */
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centra horizontalmente */
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            margin: 20px 0;
+            color: #333;
+        }
+        .grafico-container {
+            width: 95%;
+            max-width: 1200px; /* Tamaño máximo para que no se estire demasiado */
+            background-color: white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Sombrita para que se vea pro */
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 50px;
+        }
     </style>
 </head>
 <body>
-    <h1>POZO QUINTANILLA - Monitoreo en Tiempo Real</h1>
-    
-    <div class="contenedor">
-        <iframe width="100%" height="800" src="TU_URL_DE_LOOKER" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+    <h1>POZO QUINTANILLA - Monitoreo Hídrico</h1>
+
+    <div class="grafico-container">
+        <iframe width="100%" height="800" src="TU_URL_DE_LOOKER_AQUÍ" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
+
 </body>
 </html>
